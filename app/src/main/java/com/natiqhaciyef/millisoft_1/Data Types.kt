@@ -10,6 +10,8 @@ fun main() {
     val intRange = 1 until 10   // Int Range
     val charRange = '/'..'z'    // Char Range
 
+    val l = 22.0
+
     var name = "Natiq"
     println(name)
 
