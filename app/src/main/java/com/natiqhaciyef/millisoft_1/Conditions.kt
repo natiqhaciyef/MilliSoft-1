@@ -50,4 +50,15 @@ fun main() {
         6 -> "Junior"
         else -> "Hec biri"
     }
+
+
+    println("Masin markasin daxil edin")
+    var d = readln()
+    var t = when(d){
+        "Toyota" -> "toyota"
+        "Audi" -> "audi"
+        "BMW" -> "bmw"
+        else -> "nissan"
+    }
+    println("$t markali masin satildi")
 }

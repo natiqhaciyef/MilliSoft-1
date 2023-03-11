@@ -122,4 +122,69 @@ fun main() {
 
     println(sadeEdedList)
     println(sadeEdedList.size)
+    task4()
+    task6()
+    task7()
+    task8()
+    task9()
 }
+
+
+fun task4(){
+    val set = mutableSetOf<Char>('a','d','h','n','w','y','l','t','s','r')
+    var list = mutableListOf<Char>()
+    list = set.toMutableList()
+
+    println(list[3])
+    println(list[7])
+
+    list.removeAt(3)
+    list.removeAt(7)
+    println(list)
+}
+
+fun task6(){
+    val list = mutableListOf<String>("a","b","c","d","e","f")
+    var temp = ""
+    for (i in list){
+        temp += i
+    }
+    println(temp)
+}
+
+fun task7(){
+    val map = mutableMapOf<String,Any>(
+        "ad" to "Natiq",
+        "soyad" to "Haciyev",
+        "yash" to 23,
+    )
+    println(map)
+}
+
+fun task8(){
+
+}
+
+fun task9(){
+    println("Enter the number 1: ")
+    var number1 = readln().toDouble()
+    println("Enter the number 2: ")
+    var number2 = readln().toDouble()
+
+    println("Choose calculation operator: + - * /")
+    var operator = readln()
+
+    when(operator){
+        "+" -> println(toplama(number1,number2))
+        "-" -> println(cixma(number1,number2))
+        "*" -> println(vurma(number1,number2))
+        "/" -> println(bolme(number1,number2))
+        else -> println("Bele bir operator yoxdur")
+    }
+}
+
+
+fun toplama(number1: Double, number2: Double) = number1 + number2
+fun cixma(number1: Double, number2: Double) = number1 - number2
+fun vurma(number1: Double, number2: Double) = number1 * number2
+fun bolme(number1: Double, number2: Double) = number1 / number2
