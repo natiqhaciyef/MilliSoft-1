@@ -1,5 +1,8 @@
 package com.natiqhaciyef.millisoft_1.oop
 
+import com.natiqhaciyef.millisoft_1.tapsiriq.User
+
+
 class Car {
     // property
     var motor: Double = 0.0
@@ -35,5 +38,7 @@ fun main() {
 
     println(car1)
     println(car2)
+
+    var user = User()
 }
 
