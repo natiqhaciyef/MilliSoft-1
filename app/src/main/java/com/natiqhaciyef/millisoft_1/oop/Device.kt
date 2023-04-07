@@ -31,6 +31,10 @@ class Mathematics(
     constructor(a:Int, b:Int): this(mutableListOf(3,4,7)){
         qaliq = a%b
     }
+
+    override fun toString(): String {
+        return super.toString()
+    }
 }
 
 

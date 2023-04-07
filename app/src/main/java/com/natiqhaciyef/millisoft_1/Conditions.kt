@@ -1,7 +1,7 @@
 package com.natiqhaciyef.millisoft_1
 
 fun main() {
-    // if operatoru
+    // if operatoru (true)
     var a = 12
     var b = 120
     var c = 10

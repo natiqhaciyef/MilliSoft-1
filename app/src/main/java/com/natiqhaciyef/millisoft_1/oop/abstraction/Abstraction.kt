@@ -3,35 +3,36 @@ package com.natiqhaciyef.millisoft_1.oop.abstraction
 import com.natiqhaciyef.millisoft_1.tapsiriq.Car
 
 // not full abstracted
-abstract class User{
+abstract class User {
     abstract var email: String
     abstract var password: String
-    fun gmailRegistration(){
+    fun gmailRegistration() {
         println("Email user daxilinde")
     }
 }
 
 // full abstracted
-interface UserBehaviour{
+interface UserBehaviour {
     fun getEmail()
     fun getPassword()
 }
 
 // full abstracted
-interface PersonBehaviour{
+interface PersonBehaviour {
     var a: String
     fun getEmailPerson()
     fun getPasswordPerson()
 }
 
-class Person(override var email: String,
-             override var password: String,
-             override var a: String
+class Person(
+    override var email: String,
+    override var password: String,
+    override var a: String
 ) : User(), UserBehaviour, PersonBehaviour {
 
-                 fun gmailRegister(){
-                     super.gmailRegistration()
-                 }
+    fun gmailRegister() {
+        super.gmailRegistration()
+    }
 
     override fun getEmail() {
         println("@gmail.com")
@@ -50,8 +51,10 @@ class Person(override var email: String,
     }
 }
 
-class Admin(override var email: String,
-            override var password: String) : User(){
+class Admin(
+    override var email: String,
+    override var password: String
+) : User() {
 }
 
 // Abstract class ve Interface

@@ -26,7 +26,6 @@ fun main() {
     }
 
 
-
     println("------------------")
     // Set
     val mSet = mutableSetOf<String>("Natiq","Ismayil","Esref","Eli","Faiq","Ismayil","Esref")

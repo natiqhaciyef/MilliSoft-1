@@ -60,4 +60,20 @@ fun main() {
         n += 1
 
     } while (n in 1..100)
+
+    getUpperCaseCount("My Name is Natiq Haciyev")
+}
+
+// Imtahan 3. sual
+fun getUpperCaseCount(str: String){
+    var counter = 0
+    for (i in str){
+        if (i in 'A'..'Z')
+            counter ++
+    }
+
+    if (counter > 5)
+        println("Paragraph")
+    else if (counter < 5)
+        println("Text")
 }
